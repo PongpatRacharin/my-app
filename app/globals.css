@@ -2,26 +2,127 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+
+.container {
+  /* display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh; */
+  width: 100%;
+    min-height: 100vh;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    z-index: 1;
+
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+.form-container {
+  background-color: #ffffff;
+  padding: 20px;
+  width: 390px;
+  background: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+.box-sd {
+  background-color: #ffffff;
+  padding: 20px;
+  border: 1px solid #ccc;
+  width: 100%;
+  background: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 3px 20px 0 rgba(0,0,0,.1);
+  -moz-box-shadow: 0 3px 20px 0 rgba(0,0,0,.1);
+  -webkit-box-shadow: 0 3px 20px 0 rgba(0,0,0,.1);
+  -o-box-shadow: 0 3px 20px 0 rgba(0,0,0,.1);
+  -ms-box-shadow: 0 3px 20px 0 rgba(0,0,0,.1);
+}
+
+h1 {
+  font-size: 25px;
+  font-weight: bold;
+}
+
+h2 {
+  font-size: 17px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.title {
+  text-align: center;
+}
+
+form {
+  width: 300px;
+}
+
+label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.label-container {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+input {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+
+}
+
+button {
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  width: 100%;
+  background-color: #07ca7f;
+  border-radius: 40px;
+  color: #ffffff;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+}
+button[type="submit"]{
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  width: 100%;
+  background-color: #07ca7f;
+  border-radius: 40px;
+  color: #ffffff;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+}
+
+p span {
+  display: block;
+}
+
+.span-signup {
+  color: #06dd60;
+}
+
+.arrowIcon {
+  margin-left: 5px; /* Adjust the margin as needed */
 }
